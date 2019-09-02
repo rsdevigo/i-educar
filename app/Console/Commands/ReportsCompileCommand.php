@@ -47,6 +47,8 @@ class ReportsCompileCommand extends Command
      */
     public function handle()
     {
+        set_time_limit(600);
+        
         $this->info('Compiling reports files..');
 
         $jasperFiles = $this->getJasperFiles();
